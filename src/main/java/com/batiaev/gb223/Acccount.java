@@ -10,5 +10,7 @@ public interface Acccount {
 
     double getAmount();
 
+    void charge(double value);
+
     void setAmount(double value);
 }

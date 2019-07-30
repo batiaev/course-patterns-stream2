@@ -23,6 +23,11 @@ public class BankCard implements Acccount,TransportCard {
     }
 
     @Override
+    public void charge(double value) {
+        this.defaultAccount.setAmount(defaultAccount.getAmount()-value);
+    }
+
+    @Override
     public void setAmount(double value) {
         this.defaultAccount.setAmount(value);
     }
